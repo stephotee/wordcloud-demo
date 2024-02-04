@@ -5,6 +5,10 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import pandas as pd
 from io import StringIO
+import nltk
+
+nltk.download('stopwords')
+nltk.download('punkt')
 
 # Initialize NLTK stop words
 nltk_stopwords = stopwords.words('english')
